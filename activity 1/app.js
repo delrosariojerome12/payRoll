@@ -8,7 +8,6 @@ console.log(allDisplayInputs);
 
 // counter para malaman ng system kung kelan mag eenabled si disabled compute payment
 let ctr = 0;
-
 // yung foreach method ay parang for loop, nag run sa lahat ng sinelect
 // kong input element tas binigyan ng click event para di ko na ulit ulitin
 // gumamit ako dito ng arrow function na same sa regular na function pero mas makili
@@ -27,6 +26,7 @@ allInputs.forEach((userInput) => {
     }
   });
 });
+
 computePayment.addEventListener("click", () => {
   const cloneUserInputs = [...allInputs];
   let positionOrDaysContainer = cloneUserInputs.filter(

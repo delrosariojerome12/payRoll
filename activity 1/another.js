@@ -88,7 +88,6 @@ function checkSSS(grossPay) {
     sss.value = `₱ 135`;
   }
 }
-
 function computePayroll() {
   switch (designation.value) {
     case "Dean":
