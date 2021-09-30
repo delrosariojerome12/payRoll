@@ -205,6 +205,7 @@
       // user inputs ito yung mga inputs ni user
       // yung querySelector all pinipick nito lahat ng element na nasatisfy yung condition sa loob ng
       // parenthesis then ilalagay lahat ng na select sa iisang variable nagiging list of array to
+      // pinick ko po tong mga element from html using id na binigay ko sa kanila sa html
       const allInputs = document.querySelectorAll(".box input");
       const designation = document.getElementById("designation");
       const daysPresent = document.getElementById("dayPresent");
@@ -352,9 +353,11 @@
             checkSSS(grossPay);
             totalDeduction.value =
               "₱ " +
-              (parseFloat(hmdf.value.slice(1)) +
+              (
+                parseFloat(hmdf.value.slice(1)) +
                 parseFloat(philHealth.value.slice(1)) +
-                parseFloat(sss.value.slice(1)));
+                parseFloat(sss.value.slice(1))
+              ).toFixed(2);
             netPay.value =
               "₱ " +
               (
@@ -375,9 +378,11 @@
             checkSSS(grossPay);
             totalDeduction.value =
               "₱ " +
-              (parseFloat(hmdf.value.slice(1)) +
+              (
+                parseFloat(hmdf.value.slice(1)) +
                 parseFloat(philHealth.value.slice(1)) +
-                parseFloat(sss.value.slice(1)));
+                parseFloat(sss.value.slice(1))
+              ).toFixed(2);
             netPay.value =
               "₱ " +
               (
@@ -397,9 +402,11 @@
             checkSSS(grossPay);
             totalDeduction.value =
               "₱ " +
-              (parseFloat(hmdf.value.slice(1)) +
+              (
+                parseFloat(hmdf.value.slice(1)) +
                 parseFloat(philHealth.value.slice(1)) +
-                parseFloat(sss.value.slice(1)));
+                parseFloat(sss.value.slice(1))
+              ).toFixed(2);
             netPay.value =
               "₱ " +
               (
@@ -419,9 +426,11 @@
             checkSSS(grossPay);
             totalDeduction.value =
               "₱ " +
-              (parseFloat(hmdf.value.slice(1)) +
+              (
+                parseFloat(hmdf.value.slice(1)) +
                 parseFloat(philHealth.value.slice(1)) +
-                parseFloat(sss.value.slice(1)));
+                parseFloat(sss.value.slice(1))
+              ).toFixed(2);
             netPay.value =
               "₱ " +
               (
