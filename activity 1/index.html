@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <header>
+        <h1>Colegio de San Gabriel Arcangel</h1>
+        <p>Payroll Register</p>
+        <p>September 1-30, 2021</p>
+      </header>
+      <div class="employee">
+        <h3 style="text-align: center">Employee Information</h3>
+        <div class="box">
+          <table>
+            <tr>
+              <td>Employee Number</td>
+              <td>
+                <input id="employeeNumber" name="number" type="text" />
+              </td>
+            </tr>
+            <tr>
+              <td>Employee Name</td>
+              <td><input id="employeeName" type="text" /></td>
+            </tr>
+            <tr>
+              <td>College</td>
+              <td>
+                <input id="college" type="text" />
+              </td>
+            </tr>
+            <tr>
+              <td>Department</td>
+              <td>
+                <input id="department" type="text" />
+              </td>
+            </tr>
+            <td>Designation</td>
+            <td><input id="designation" type="text" /></td>
+            <tr>
+              <td>Days Present</td>
+              <td>
+                <input id="dayPresent" type="text " />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button onclick="computePayroll()" id="compute">
+                  Compute Payment
+                </button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="salary">
+        <h3>Salary Information</h3>
+        <table>
+          <tr>
+            <th colspan="2">Rates and Gross Pay</th>
+          </tr>
+          <tr>
+            <td>Monthly Rates</td>
+            <td><input disabled type="text" id="monthly" /></td>
+          </tr>
+          <tr>
+            <td>Daily Rates</td>
+            <td><input disabled type="text" id="daily" /></td>
+          </tr>
+          <tr>
+            <td>Hourly Rates</td>
+            <td><input disabled type="text" id="hourly" /></td>
+          </tr>
+          <tr>
+            <td>Gross Pay</td>
+            <td><input disabled type="text" id="grossPay" /></td>
+          </tr>
+          <tr>
+            <td>Net Pay</td>
+            <td><input disabled type="text" id="netPay" /></td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <th colspan="2">Statutory Deduction</th>
+          </tr>
+          <tr>
+            <td>HMDF Contribution</td>
+            <td><input disabled type="text" id="hmdf" /></td>
+          </tr>
+          <tr>
+            <td>PhilHealth Contribution</td>
+            <td><input disabled type="text" id="philhealth" /></td>
+          </tr>
+          <tr>
+            <td>SSS Contribution</td>
+            <td><input disabled type="text" id="sss" /></td>
+          </tr>
+          <tr>
+            <td>Total Deductions</td>
+            <td><input disabled type="text" id="totalDeduction" /></td>
+          </tr>
+        </table>
+      </div>
+      <footer>
+        <h2>Programmed By Jerome Ramos</h2>
+      </footer>
+    </main>
+    <script src="another.js"></script>
+  </body>
+</html>
